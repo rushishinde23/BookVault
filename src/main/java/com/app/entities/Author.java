@@ -1,4 +1,4 @@
-package com.app.BookVault.entities;
+package com.app.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

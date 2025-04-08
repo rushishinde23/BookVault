@@ -1,6 +1,6 @@
-package com.app.BookVault.daos;
+package com.app.daos;
 
-import com.app.BookVault.entities.Book;
+import com.app.entities.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

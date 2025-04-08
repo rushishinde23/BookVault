@@ -1,8 +1,8 @@
-package com.app.BookVault.services;
+package com.app.services;
 
-import com.app.BookVault.daos.BookRepository;
-import com.app.BookVault.entities.Author;
-import com.app.BookVault.entities.Book;
+import com.app.daos.BookRepository;
+import com.app.entities.Author;
+import com.app.entities.Book;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 

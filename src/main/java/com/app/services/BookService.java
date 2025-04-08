@@ -1,7 +1,7 @@
-package com.app.BookVault.services;
+package com.app.services;
 
-import com.app.BookVault.daos.BookRepository;
-import com.app.BookVault.entities.Book;
+import com.app.daos.BookRepository;
+import com.app.entities.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,14 +29,11 @@ public class BookService {
         Book book=bookRepository.findById(id).get();
         return book;
     }
-
     public Book updateBook(Book book, int id) {
-
         book.setId(id);
         Book book1=bookRepository.save(book);
         return book1;
     }
-
     public String deleteBookById(int id) {
          bookRepository.deleteById(id);
          String msg="Book deleted successfully";
